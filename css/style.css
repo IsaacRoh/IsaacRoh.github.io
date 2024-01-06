@@ -1,0 +1,249 @@
+html{
+    height: 100vh;
+    width: 100vw;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+body{
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    position:relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Neue Haas Grotesk Text Pro", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-weight: lighter;
+}
+div#contents-area{
+    height:80%;
+}
+
+#weather{
+    font-weight: bold;
+}
+
+#weather>span:last-child{
+    padding-left:10px;
+}
+
+div#clock-area{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top:36vh;
+    transform:translateY(-50%);
+}
+div#greeting-and-quote{
+    height:10vh;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    position:relative;
+    top:26vh;
+}
+div#header{
+    display:flex;
+    height:10%;
+    align-items: center;
+    justify-content: flex-start;
+    border: none;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+div#footer{
+    height:10%;
+}
+div#todo-area{
+    position:absolute;
+    bottom:10vh;
+    right:1vw;
+    height: 40vh;
+    width:15vw;
+    background-color: #000;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+}
+h1{
+    position:absolute;
+    left: 50%;
+    font-size: 6vh;
+    font-weight: lighter;
+    transform: translateX(-50%);
+    height:fit-content;
+    width:fit-content;
+    transition: all 0.5s ease-in-out;
+}
+
+h2{
+    position:relative;
+    font-size:18vh;
+    height:fit-content;
+    width:fit-content;
+    font-weight: lighter;
+    letter-spacing: -2px;
+    transform: translateY(1vh);
+}
+h3{
+    position:absolute;
+    left: 50%;
+    font-size: 7vh;
+    font-weight: lighter;
+    transform: translateX(-50%);
+    height:fit-content;
+    width:fit-content;
+    transition: all 0.5s ease-in-out;
+}
+
+input#login-input{
+    position:relative;
+    margin-top: 1vh;
+    background-color: transparent;
+    border:none;
+    width: fit-content;
+    border-bottom:1px solid #fff;
+    color:#fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size:4vh
+}
+
+input#todo-input{
+    position:relative;
+    margin-top: 1vh;
+    background-color: transparent;
+    border:none;
+    width: 100%;
+    border-bottom:1px solid #fff;
+    color:#fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size:2vh
+}
+
+input:focus{
+    outline: none;
+}
+
+input:focus::placeholder{
+    color:transparent;
+    transition: color 0.2s ease-in-out;
+}
+
+input::placeholder{
+    color: #fff;
+    font-style:italic;
+    margin-bottom:5vh;
+}
+#todo-form{
+    position:relative;
+    height:fit-content;
+    left:50%;
+    transform: translateX(-50%);
+    width:90%;
+    background-color:transparent;
+}
+
+#todo-list{
+    position:relative;
+    height:fit-content;
+    width:100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#todo-list>li{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:5px;
+    padding-left: 5%;
+}
+
+#todo-list>li>span{
+    width: 80%;
+    display:block;
+    padding-left: 5%;
+}
+
+
+#todo-list>li>button{
+    width: 10%;
+    display:block;
+    border: none;
+    background-color: transparent;
+}
+
+#todo-list>li>button#checkbox{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+
+}
+
+#quotes{
+    position:relative;
+    height:fit-content;
+    width:fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:2vh;
+    top:5vh;
+    
+}
+
+
+#quote{
+    position:relative;
+    font-style:italic;
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:all;
+}
+
+#author{
+    position:relative;
+    margin-left:15px;
+    -webkit-user-select:all;
+    -moz-user-select:all;
+    -ms-user-select:all;
+    user-select:all;
+}
+
+#login-form{
+    position:absolute;
+    height:fit-content;
+    width:fit-content;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#todo-btn{
+    position: relative;
+    width:fit-content;
+    left:100%;
+    transform: translateX(-150%);
+}
+
+.hidden{
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.withdrew{
+    transform: translateY(200%);
+    transition: all 0.5s ease-in-out;
+}
+
+.complete{
+    text-decoration: line-through;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\style.css">
+    <title>IsaacApp</title>
+</head>
+<body>
+    <div id = "header">
+        <div id = "weather">
+            <span></span>
+            <br>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div id="contents-area">
+        <div id="clock-area">
+            <h2 id ="clock">00:00</h2>
+        </div>
+        <div id = "greeting-and-quote">
+            <form class="hidden" id = "login-form">
+                <input 
+                    required
+                    maxlength="15"
+                    type="text" 
+                    placeholder="What is your name?"
+                    id = "login-input"
+                />
+            </form>
+            <h1 class="hidden" id="greeting"></h1>
+            <h3 class="hidden" id="timeout-quote"></h3>
+        </div>        
+    </div>
+    <div id="footer">
+        <div class="withdrew" id="todo-area">
+            <div id="todo-div">
+                <form id="todo-form">
+                    <input type="text" placeholder=">> What will you do today? <<" id="todo-input"></input> 
+                </form> 
+            </div>
+            <ul id="todo-list"></ul>
+        </div>
+        <div id ="quotes">
+            <span id="quote"></span>
+            <span id="author"></span>
+        </div>
+        <div id ="todo-btn">
+            <p>∧ TODO</p>
+        </div>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js\quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/fetch.js"></script>
+</body>
