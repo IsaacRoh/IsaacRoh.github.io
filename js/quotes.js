@@ -19,6 +19,10 @@ const quotes = [
         quotes: "포기하는 순간 시합 종료야",
         author: "안감독",
     },
+    {
+        quotes: "농구가... 하고싶어요",
+        author: "정대만",
+    },
 ];
 
 const quote = document.querySelector("#quotes span:first-child");
